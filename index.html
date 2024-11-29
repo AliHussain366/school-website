@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discipline Islamic School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div id="loginSection" class="section">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="navbar">
+            <div class="logo">
+                <h1>Discipline Islamic School</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#management">School Management</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Discipline Islamic School</h2>
+            <p>Empowering students with Islamic values and modern education.</p>
+            <a href="#admissions" class="cta-button">Enroll Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Discipline Islamic School is committed to fostering an environment of excellence in academics and character-building through Islamic teachings.</p>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="admissions">
+        <div class="container">
+            <h2>Admissions</h2>
+            <p>Join our family of learners. Explore our admissions process for new students.</p>
+            <ul>
+                <li>Online application form</li>
+                <li>Interview and entrance test</li>
+                <li>Fee submission</li>
+            </ul>
+            <a href="#contact" class="cta-button">Contact Admissions</a>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="academics">
+        <div class="container">
+            <h2>Academics</h2>
+            <p>Our curriculum blends Islamic education with modern academic standards, ensuring holistic development.</p>
+            <ul>
+                <li>Quran and Islamic Studies</li>
+                <li>Mathematics, Science, and Technology</li>
+                <li>Physical Education and Arts</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Parent-Teacher Meeting - Dec 15, 2024</li>
+                <li>Annual Sports Day - Jan 10, 2025</li>
+                <li>Science Exhibition - Feb 20, 2025</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- School Management Section -->
+    <section id="management" class="management">
+        <div class="container">
+            <h2>School Management System</h2>
+
+            <div id="addStudent" class="management-feature">
+                <h3>Add Student</h3>
+                <form id="studentForm">
+                    <label for="studentName">Name:</label>
+                    <input type="text" id="studentName" required>
+                    <label for="studentAge">Age:</label>
+                    <input type="number" id="studentAge" required>
+                    <label for="studentGrade">Grade:</label>
+                    <input type="text" id="studentGrade" required>
+                    <button type="submit">Add Student</button>
+                </form>
+            </div>
+
+            <!-- Manage Teachers -->
+            <div id="manageTeachers" class="management-feature">
+                <h3>Manage Teachers</h3>
+                <form id="teacherForm">
+                    <label for="teacherName">Name:</label>
+                    <input type="text" id="teacherName" required>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" required>
+                    <label for="contact">Contact:</label>
+                    <input type="text" id="contact" required>
+                    <button type="submit">Add Teacher</button>
+                </form>
+            </div>
+
+            <!-- Manage Classes -->
+            <div id="manageClasses" class="management-feature">
+                <h3>Manage Classes</h3>
+                <form id="classForm">
+                    <label for="className">Class Name:</label>
+                    <input type="text" id="className" required>
+                    <label for="numStudents">Number of Students:</label>
+                    <input type="number" id="numStudents" required>
+                    <button type="submit">Add Class</button>
+                </form>
+            </div>
+
+            <!-- Attendance System -->
+            <div id="attendanceSystem" class="management-feature">
+                <h3>Attendance System</h3>
+                <form id="attendanceForm">
+                    <label for="attendanceDate">Date:</label>
+                    <input type="date" id="attendanceDate" required>
+                    <h4>Mark Attendance</h4>
+                    <button type="submit">Save Attendance</button>
+                </form>
+            </div>
+
+            <!-- Report Cards -->
+            <div id="reportCards" class="management-feature">
+                <h3>Generate Report Cards</h3>
+                <form id="reportCardForm">
+                    <label for="student">Student Name:</label>
+                    <input type="text" id="student" required>
+                    <label for="marks">Marks:</label>
+                    <input type="number" id="marks" required>
+                    <label for="grade">Grade:</label>
+                    <input type="text" id="grade" required>
+                    <button type="submit">Generate Report</button>
+                </form>
+            </div>
+
+            <!-- Notice Board -->
+            <div id="noticeBoard" class="management-feature">
+                <h3>Notice Board</h3>
+                <form id="noticeForm">
+                    <label for="noticeText">Notice:</label>
+                    <textarea id="noticeText" required></textarea>
+                    <button type="submit">Post Notice</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Discipline Islamic School. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
